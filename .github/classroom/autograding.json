@@ -1,0 +1,94 @@
+{
+  "tests": [
+    {
+      "name": "Required files exist",
+      "setup": "",
+      "run": "python3 scripts/check_html.py files",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "index.html: structure (DOCTYPE, html, head, body, lang, charset, viewport, title)",
+      "setup": "",
+      "run": "python3 scripts/check_html.py index_structure",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 8
+    },
+    {
+      "name": "index.html: semantic tags (header, nav, main, section, footer)",
+      "setup": "",
+      "run": "python3 scripts/check_html.py index_semantic",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 7
+    },
+    {
+      "name": "index.html: exactly one <h1>",
+      "setup": "",
+      "run": "python3 scripts/check_html.py index_h1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 3
+    },
+    {
+      "name": "index.html: every <img> has alt; every <input> has a matching <label>",
+      "setup": "",
+      "run": "python3 scripts/check_html.py index_a11y",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 7
+    },
+    {
+      "name": "index.html: contact form (text, email, textarea, submit button)",
+      "setup": "",
+      "run": "python3 scripts/check_html.py index_form",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "about.html: structure + semantic tags + nav links to index",
+      "setup": "",
+      "run": "python3 scripts/check_html.py about_structure",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 8
+    },
+    {
+      "name": "about.html: <table> with <thead> and 3+ data rows",
+      "setup": "",
+      "run": "python3 scripts/check_html.py about_table",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "about.html: external link with target=_blank rel=noopener",
+      "setup": "",
+      "run": "python3 scripts/check_html.py about_external",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    }
+  ]
+}
